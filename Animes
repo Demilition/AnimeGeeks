@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ffccff;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Anime's To Watch!</h2>
+
+<table>
+  <tr>
+    <th>S Rank</th>
+    <th>A Rank</th>
+    <th>B Rank</th>
+  </tr>
+  <tr>
+    <td>Tokyo Ghoul</td>
+    <td>My Hero Academia</td>
+    <td>7 Seeds</td>
+  </tr>
+  <tr>
+    <td>Attack on Titan</td>
+    <td>One Piece</td>
+    <td>Ajin</td>
+  </tr>
+  <tr>
+    <td>Demon Slayer</td>
+    <td>Inuyasha</td>
+    <td>Black Butler</td>
+  </tr>
+  <tr>
+    <td>Black Clover</td>
+    <td>The Seven Deadly Sins</td>
+    <td>Naruto</td>
+  </tr>
+  <tr>
+    <td>Fire Force</td>
+    <td>One Punch Man</td>
+    <td>Devilman Crybaby</td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
