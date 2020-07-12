@@ -1,26 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.city {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
   background-color: lightblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
   color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ffccff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: lightblue;
   padding: 10px;
-} 
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
 
 <h2>Welcome to Demi's Page</h2>
+<p>Wonderful world we live in, don't you think? Since you're here, HII!!!! Also, please, please, and i repeat .... please wear your mask when you go out , yes it's annoying. I would know since i wear one for 9 hours when i go to work. But covid-19 aint stopping for no one! Better safe than sorry. BE SMART !!!</p>
 
-<p>Wonderful world we live in, don't you think?</p>
+<header>
+  <h2>About Me</h2>
+</header>
 
-<h2 class="city">About Me</h2>
-<p class="city">Love Anime, Video games, Reading, and Dancing</p>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Animes</a></li>
+      <li><a href="#">Video Games</a></li>
+      <li><a href="#">Books</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>COMING SOOOOONNN</p>
+  </article>
+</section>
 
-
-<h2>Tokyo Ghoul(Favorite Anime)</h2>
-<img src="https://cdn.europosters.eu/image/750/posters/tokyo-ghoul-kaneki-i30934.jpg" width="500" height="333">
+<footer>
+  <p>My Foot Goes here</p>
+</footer>
 
 </body>
 </html>
